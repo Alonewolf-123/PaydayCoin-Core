@@ -1,0 +1,7 @@
+[main]
+host = https://www.transifex.com
+
+[paydaycoin.qt-translation-418x]
+file_filter = src/qt/locale/paydaycoin_<lang>.ts
+source_file = src/qt/locale/paydaycoin_en.ts
+source_lang = en

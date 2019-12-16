@@ -1,0 +1,33 @@
+# /etc/conf.d/paydaycoind: config file for /etc/init.d/paydaycoind
+
+# Config file location
+#PAYDAYCOIND_CONFIGFILE="/etc/paydaycoin/paydaycoin.conf"
+
+# What directory to write pidfile to?  (created and owned by $PAYDAYCOIND_USER)
+#PAYDAYCOIND_PIDDIR="/var/run/paydaycoind"
+
+# What filename to give the pidfile
+#PAYDAYCOIND_PIDFILE="${PAYDAYCOIND_PIDDIR}/paydaycoind.pid"
+
+# Where to write paydaycoind data (be mindful that the blockchain is large)
+#PAYDAYCOIND_DATADIR="/var/lib/paydaycoind"
+
+# User and group to own paydaycoind process
+#PAYDAYCOIND_USER="paydaycoin"
+#PAYDAYCOIND_GROUP="paydaycoin"
+
+# Path to paydaycoind executable
+#PAYDAYCOIND_BIN="/usr/bin/paydaycoind"
+
+# Nice value to run paydaycoind under
+#PAYDAYCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+#PAYDAYCOIND_OPTS=""
+
+# The timeout in seconds OpenRC will wait for paydaycoind to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+PAYDAYCOIND_SIGTERM_TIMEOUT=60
